@@ -12,6 +12,9 @@
 html {
     scroll-behavior: smooth;
 }
+a{
+    text-decoration: none;
+}
 
 /* HEADER & NAVBAR */
 .header {
@@ -141,4 +144,117 @@ html {
     border-radius: 30px;
     color: white;
     margin-top: 3%;
+}
+
+/* TOP EVENTS */
+
+.top-events{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.top-events-title{
+    margin-bottom: 2.7rem;
+    font-size: 3rem;
+}
+
+.top-events-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.top-events-card-1{
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;;
+}
+
+.top-events-card-1 img{
+    width: 300px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.event-text{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.event-location{
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* NEWSLETTER SECTION  */
+.newsletter {
+    background-color: #0A075F;
+    padding: 4rem 0;
+    color: #fff;
+}
+.newsletter h2, .newsletter p{
+    text-align: center;
+    line-height: 34px;
+}
+.newsletter-box {
+    margin: 20px auto;
+    display: table;
+}
+.newsletter-box i {
+    background: #f7f7f7;
+    width: 60px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    color: #0A075F;
+    border-right: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 42px;
+}
+.newsletter .newsletter-box button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #0A075F;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-left: 0px;
+    height: 42px;
+    margin-top: 5px;
+}
+.emailbox{
+    border: none;
+    outline: none;
+}
+.emailbox {
+    width: 0px;
+    height: 42px;
+    transition: 0.6s;
+    font-size: 16px;
+}
+.newsletter-box:hover > .emailbox, .emailbox:focus{
+    width: 280px;
+    padding: 0 10px;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
 }
